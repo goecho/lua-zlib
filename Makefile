@@ -1,9 +1,9 @@
 # This Makefile is based on LuaSec's Makefile. Thanks to the LuaSec developers.
 # Inform the location to intall the modules
-LUAPATH  ?= /usr/share/lua/5.1
-LUACPATH ?= /usr/lib/lua/5.1
-INCDIR   ?= -I/usr/include/lua5.1
-LIBDIR   ?= -L/usr/lib
+LUAPATH  ?= /opt/soft/luajit
+LUACPATH ?= /opt/soft/base_env/openresty/lualib
+INCDIR   ?= -I/opt/soft/luajit/include/luajit-2.0
+LIBDIR   ?= -L/opt/soft/luajit/lib
 
 # For Mac OS X: set the system version
 MACOSX_VERSION = 10.4
@@ -11,7 +11,7 @@ MACOSX_VERSION = 10.4
 CMOD = zlib.so
 OBJS = lua_zlib.o
 
-LIBS = -lz -llua -lm
+LIBS = -lz -lm
 WARN = -Wall -pedantic
 
 BSD_CFLAGS  = -O2 -fPIC $(WARN) $(INCDIR) $(DEFS)
