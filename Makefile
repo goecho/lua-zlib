@@ -1,9 +1,9 @@
 # This Makefile is based on LuaSec's Makefile. Thanks to the LuaSec developers.
 # Inform the location to intall the modules
-LUAPATH  ?= /opt/soft/luajit
-LUACPATH ?= /opt/soft/base_env/openresty/lualib
-INCDIR   ?= -I/opt/soft/luajit/include/luajit-2.0
-LIBDIR   ?= -L/opt/soft/luajit/lib
+LUAPATH  ?= /opt/soft/rulenginx/luajit
+LUACPATH ?= /opt/soft/rulenginx/openresty/lualib
+INCDIR   ?= -I/opt/soft/rulenginx/luajit/include/luajit-2.1
+LIBDIR   ?= -L/opt/soft/rulenginx/luajit/lib
 
 # For Mac OS X: set the system version
 MACOSX_VERSION = 10.4
